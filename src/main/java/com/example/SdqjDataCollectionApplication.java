@@ -9,7 +9,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @MapperScan({"com.tl.mapper"})
 public class SdqjDataCollectionApplication {
-//123
+
+//12367888knm;kfrfs
 	public static void main(String[] args) {
 		SpringApplication.run(SdqjDataCollectionApplication.class, args);
 		System.out.println("导线温度consumer_webt启动成功！");
