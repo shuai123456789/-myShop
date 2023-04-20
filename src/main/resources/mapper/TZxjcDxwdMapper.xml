@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TZxjcDxwdMapper">
+
+
+    <insert id="insertTZxjcDxwd" parameterType="com.example.model.SxdlDxwd">
+        insert into t_zxjc_dxwd
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="sbid != null">sbid,</if>
+            <if test="unit_sum != null">cjdyzs,</if>
+            <if test="unit_no != null">cjdyxh,</if>
+            <if test="xw1 != null">xw1,</if>
+            <if test="xw2 != null">xw2,</if>
+            <if test="xw3 != null">xw3,</if>
+            <if test="xw4 != null">xw4,</if>
+            <if test="sjrq != null">sjrq,</if>
+            <if test="cjsj != null">cjsj,</if>
+            <if test="cs != null">cs,</if>
+            <if test="gjbs !=null">gjbs,</if>
+            <if test="gjnr !=null">gjnr,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="cdid != null">cdid,</if>
+            <if test="batx != null">bat_x,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="sbid != null">#{sbid},</if>
+            <if test="unit_sum != null">#{unit_sum},</if>
+            <if test="unit_no != null">#{unit_no},</if>
+            <if test="xw1 != null">#{xw1},</if>
+            <if test="xw2 != null">#{xw2},</if>
+            <if test="xw3 != null">#{xw3},</if>
+            <if test="xw4 != null">#{xw4},</if>
+            <if test="sjrq != null">#{sjrq},</if>
+            <if test="cjsj != null">#{cjsj},</if>
+            <if test="cs != null">#{cs},</if>
+            <if test="gjbs !=null">#{gjbs},</if>
+            <if test="gjnr !=null">#{gjnr},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="cdid != null">#{cdid},</if>
+            <if test="batx != null">#{batx},</if>
+        </trim>
+    </insert>
+
+    <select id="queryStu" resultType="com.example.model.Student">
+        select * from student
+    </select>
+
+</mapper>

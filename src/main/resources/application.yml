@@ -1,0 +1,69 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kuang_test02?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 123456
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      initialSize: 5
+#      minIdle: 10
+#      maxActive: 50
+#      maxWait: 60000
+#      timeBetweenEvictionRunsMillis: 60000
+#      minEvictableIdleTimeMillis: 300000
+#      validationQuery: SELECT 1 from dual
+#      testWhileIdle: true
+#      testOnBorrow: false
+#      testOnReturn: false
+#      poolPreparedStatements: true
+#      keepAlive: true
+#      maxPoolPreparedStatementPerConnectionSize: 20
+#      useGlobalDataSourceStat: true
+#      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+#      mysql:
+#        usePingMethod: false
+
+#  rabbitmq:
+#    host: 172.21.6.227
+#    port: 5672
+#    username: root
+#    password: hntl@1606
+#    virtual-host: host1
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
+#
+#  jackson:
+#    time-zone: GMT+8
+#    date-format: yyyy-MM-dd HH:mm:ss
+#
+#mybatis:
+#  mapperLocations: classpath:mapper/*Mapper.xml
+#  typeAliasesPackage: com.tl.model
+
+## 配置核心线程数
+#async:
+#  executor:
+#    thread:
+#      core_pool_size: 5
+#      # 配置最大线程数
+#      max_pool_size: 10
+#      # 配置队列大小
+#      queue_capacity: 999
+#      # 配置线程最大空闲时间
+#      keep_alive_seconds: 60
+#      # 配置线程池中的线程的名称前缀
+#      name:
+#        prefix: dxwd-async-
+
+# 日志配置
+logging:
+  level:
+    com.tl: debug
+    org.springframework: warn
